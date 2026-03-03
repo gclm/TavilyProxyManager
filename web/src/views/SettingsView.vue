@@ -6,6 +6,9 @@
         <div class="page-subtitle">
           {{ t("settings.subtitle") }}
         </div>
+        <div class="page-version">
+          {{ t("settings.version", { version: appVersion }) }}
+        </div>
       </div>
     </div>
 
@@ -295,6 +298,7 @@ import { writeClipboardText } from "../utils/clipboard";
 import { locale, t } from "../i18n";
 
 const message = useMessage();
+const appVersion = __APP_VERSION__;
 const masterKey = ref("");
 const savingAutoSync = ref(false);
 const savingLogCleanup = ref(false);
@@ -566,6 +570,12 @@ onMounted(async () => {
 .page-subtitle {
   color: #888;
   font-size: 14px;
+}
+
+.page-version {
+  color: #999;
+  font-size: 12px;
+  font-family: monospace;
 }
 
 .settings-card {

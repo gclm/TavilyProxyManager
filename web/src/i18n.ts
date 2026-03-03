@@ -157,6 +157,7 @@ const MESSAGES: Record<Locale, Record<string, string>> = {
 
     "settings.title": "Settings",
     "settings.subtitle": "Configure system-wide settings and master key.",
+    "settings.version": "Version {version}",
     "settings.masterAuth.title": "Master Authentication",
     "settings.masterAuth.alert":
       "The master key is used to authenticate all administrative requests. Keep it secure.",
@@ -348,6 +349,7 @@ const MESSAGES: Record<Locale, Record<string, string>> = {
 
     "settings.title": "设置",
     "settings.subtitle": "配置系统设置与主密钥。",
+    "settings.version": "版本 {version}",
     "settings.masterAuth.title": "主密钥认证",
     "settings.masterAuth.alert": "主密钥用于验证所有管理请求，请妥善保管。",
     "settings.masterAuth.currentKey": "当前主密钥",
